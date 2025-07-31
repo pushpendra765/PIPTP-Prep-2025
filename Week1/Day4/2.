@@ -1,0 +1,21 @@
+. java
+public static int foo(int n) {
+ if (n == 1) return 1;
+ if (n % 2 == 0) return 2 * foo(n / 2);
+ return 2 * foo((n - 1) / 2) + 1;
+}
+System.out.println(foo(5));
+A) 5
+B) 9
+C) 11
+D) 15
+To find the output of foo(5):
+• Since 5 is odd and not 1, we take the else branch:
+• foo(5) = 2 * foo((5 - 1)/2) + 1 = 2 * foo(2) + 1
+• Evaluate foo(2):
+• 2 is even, not 1, so: foo(2) = 2 * foo(1)
+• Evaluate foo(1):
+• returns 1 (base case)
+• So, foo(2) = 2 * 1 = 2
+• Substitute back: foo(5) = 2 * 2 + 1 = 5
+Therefore, the output is:5
