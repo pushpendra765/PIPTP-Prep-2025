@@ -1,0 +1,14 @@
+jave
+
+public static int solve(int n) {
+    if (n == 0) return 1;
+    if (n < 10) return 0;
+    if (n % 10 == 0) return 1 + solve(n / 10);
+    return solve(n / 10);
+}
+System.out.println(solve(102030));
+a)6
+b)2
+c)1
+d)3
+ Correct option - d
