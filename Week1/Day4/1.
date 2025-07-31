@@ -1,0 +1,13 @@
+java
+
+public static int f(int n) {
+    if (n == 0) return 0;
+    return n + f(n - 1);
+}
+System.out.println(f(5));
+
+A) 15
+B) 10
+C) 5
+D) 25
+Correct option :15
