@@ -1,0 +1,11 @@
+. java
+public static int solve(int a, int b) {
+ if (b == 0) return a;
+ return solve(b, a % b);
+}
+System.out.println(solve(48, 18));
+A) 8
+B) 12
+C) 6
+D) 9
+Correct Option is :6
