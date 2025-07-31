@@ -1,0 +1,10 @@
+public static int calc(int n) {
+    if (n < 2) return n;
+    return calc(n - 1) * calc(n - 2);
+}
+System.out.println(calc(5));
+a) 12
+b) 6
+c) 0
+d) 2
+Correct option is c that is 0.
